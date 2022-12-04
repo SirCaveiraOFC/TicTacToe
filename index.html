@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da Velha - @SrCaveiraOFC</title>
+
+	<!-- meta -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale" />
+	<meta name="author" content="Sr.Caveira" />
+	<meta name="keywords" content="Jogo da Velha." />
+	<meta name="description" content="Jogo da Velha 2 players." />
+	<meta name="theme-color" content="#000" />
+	<meta name="copyright" content="© 2022, Sr.Caveira." />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="noarchive" />
+	<meta name="generator" content="Sublime Text 3" />
+	<meta name="rating" content="general" />
+
+	<!-- link -->
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+	<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<h1 class="game-title">Jogo da Velha</h1>
+
+	<div class="container">
+		<div class="score-container">
+			<div class="players">
+				<span class="player">Player 1</span>
+				<span class="vs">VS</span>
+				<span class="player">Player 2</span>
+			</div>
+
+			<div class="score">
+				<span class="number">0</span>
+				<button class="reset">Resetar</button>
+				<span class="number">0</span>
+			</div>
+		</div>
+
+		<div class="lines">
+			<div class="line-vertical"></div>
+			<div class="line-horizontal"></div>
+			<div class="line-rotated"></div>
+		</div>
+
+		<div class="cells">
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+			<div class="cell" data-selected="false">
+				<span class="symbol"></span>
+			</div>
+		</div>
+	</div>
+
+	<script src="./game.js"></script>
+</body>
+</html>
